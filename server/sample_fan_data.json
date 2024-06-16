@@ -1,0 +1,55 @@
+{
+    "_id": {
+      "$oid": "652dbd86300789d295a76b0a"
+    },
+    "walletAddress": "0x527d86064Fe3c6b91c472243d83E926BfC6Af607",
+    "provider": "email",
+    "brandIds": [
+      "65775effce10f2c36af62de6",
+      "652d9be4300789d295a7673e",
+      "65834398379f7a92b653eb32"
+    ],
+    "playedTracks": [
+          {
+            "artistIdSpotify": "1RyvyyTE3xzB2ZywiAwp0i",
+            "artistName": "Future",
+            "playedAt": "2024-04-12T07:28:24.559Z",
+            "trackIdSpotify": "1oq77Ic0whhb0W7f2a1sh4",
+            "id": "1oq77Ic0whhb0W7f2a1sh4",
+            "trackName": "#1 (Intro)",
+            "name": "#1 (Intro)",
+            "durationSeconds": 42
+          },
+          {
+            "artistIdSpotify": "66CXWjxzNUsdJxJ2JdwvnR",
+            "artistName": "Ariana Grande",
+            "playedAt": "2024-03-08T17:54:21.595Z",
+            "trackIdSpotify": "6ocbgoVGwYJhOv1GgI9NsF",
+            "id": "6ocbgoVGwYJhOv1GgI9NsF",
+            "trackName": "7 rings",
+            "name": "7 rings",
+            "durationSeconds": 179
+          }
+        ],
+   "savedAlbums": [
+        { "id": "6wTyGUWGCilBFZ837k5aRi", "name": "SAVAGE MODE II" },
+        { "id": "7D2NdGvBHIavgLhmcwhluK", "name": "Yeezus" },
+        { "id": "1UrVUYOo7y1pAo7EJYQOmZ", "name": "Asking" }
+      ],
+    "savedPlaylist": [
+        { "id": "5NrKuhrT0xAmTE34q9CDJm", "name": "Rae" },
+        { "id": "0CJtT9TIa3fa1omWB7laKR", "name": "The Weeknd" },
+        { "id": "4VQk7e17U0PbDBbWIUPVEs", "name": "Linkin Park and more" }
+       ],
+    "joinConsent": false,
+    "isVerified": true,
+    "youtubeAuth": false,
+    "discordAuth": false,
+    "createdAt": {
+      "$date": "2023-10-16T22:47:36.347Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-28T18:39:03.547Z"
+    },
+    "__v": 0
+  }
