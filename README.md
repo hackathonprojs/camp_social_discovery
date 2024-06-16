@@ -2,7 +2,7 @@
 
 Reunion is a Web3 social network Dapp built on the Camp Network. This project integrates Web2 social data into Web3, enabling seamless interactions and connections across platforms. Developed using HTML5, JavaScript, React, and Solidity, Reunion aims to provide a vibrant and engaging social experience in the decentralized world.
 
-### The contracts current deployed on Camp Network V2:
+- The contracts current deployed on Camp Network V2:
 https://explorer.camp-network-testnet.gelato.digital/address/0x28ed5445bcA9163aee1f7b7A78464CfA8f835f07?tab=contract
 
 ## Features
