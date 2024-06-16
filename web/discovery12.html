@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            max-height: calc(100vh - 40px);
+        }
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 5px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile h1 {
+            font-size: 24px;
+            margin: 10px 0 0;
+        }
+        .recommendations {
+            margin-top: 20px;
+        }
+        .recommendation {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .recommendation img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .recommendation .details {
+            flex-grow: 1;
+        }
+        .recommendation .details .name {
+            font-size: 18px;
+            margin: 0;
+        }
+        .recommendation .details .shared-interest {
+            font-size: 14px;
+            color: #666;
+        }
+        .recommendation .connect-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .recommendation .connect-button:hover {
+            background-color: #0056b3;
+        }
+        .connected {
+            background-color: #28a745 !important;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="profile">
+        <img src="https://pbs.twimg.com/profile_images/1758176482923544576/yqC9eTZh_400x400.jpg" alt="Profile Picture">
+        <h1>Leslie Goodlin</h1>
+    </div>
+
+    <div class="recommendations">
+        <h2 style="margin-bottom: 10px;">Recommendations</h2>
+        <div class="recommendation">
+            <img src="https://pbs.twimg.com/profile_images/1766836345450672128/HpuBz514_400x400.jpg" alt="Recommended Person 1">
+            <div class="details">
+                <p class="name">Alice Smith <button class="connect-button" onclick="connect(this)">Connect</button></p>
+                <p class="shared-interest">You both listen to the song 'Yesterday'</p>
+            </div>
+        </div>
+        <div class="recommendation">
+            <img src="https://pbs.twimg.com/profile_images/1766836345450672128/HpuBz514_400x400.jpg" alt="Recommended Person 2">
+            <div class="details">
+                <p class="name">Bob Johnson <button class="connect-button" onclick="connect(this)">Connect</button></p>
+                <p class="shared-interest">You both listen to the song 'Yesterday'</p>
+            </div>
+        </div>
+        <div class="recommendation">
+            <img src="https://pbs.twimg.com/profile_images/1766836345450672128/HpuBz514_400x400.jpg" alt="Recommended Person 3">
+            <div class="details">
+                <p class="name">Charlie Brown <button class="connect-button" onclick="connect(this)">Connect</button></p>
+                <p class="shared-interest">You both listen to the song 'Yesterday'</p>
+            </div>
+        </div>
+        <div class="recommendation">
+            <img src="https://pbs.twimg.com/profile_images/1766836345450672128/HpuBz514_400x400.jpg" alt="Recommended Person 4">
+            <div class="details">
+                <p class="name">David Miller <button class="connect-button" onclick="connect(this)">Connect</button></p>
+                <p class="shared-interest">You both watch 'Game of Thrones'</p>
+            </div>
+        </div>
+        <div class="recommendation">
+            <img src="https://pbs.twimg.com/profile_images/1766836345450672128/HpuBz514_400x400.jpg" alt="Recommended Person 5">
+            <div class="details">
+                <p class="name">Emily Davis <button class="connect-button" onclick="connect(this)">Connect</button></p>
+                <p class="shared-interest">You both like hiking</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function connect(button) {
+        button.textContent = 'Connecting...';
+        button.disabled = true;
+        setTimeout(function () {
+            button.textContent = 'Connected';
+            button.classList.add('connected');
+            button.disabled = false;
+        }, 10000); // 10 seconds delay
+    }
+</script>
+
+</body>
+</html>
