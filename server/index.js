@@ -23,6 +23,8 @@ app.get('/fandata', (req, res) => {
     });
 });
 
+app.use(express.static('web'));
+
 // Start the server on port 3000
 const port = 3000;
 app.listen(port, () => {
