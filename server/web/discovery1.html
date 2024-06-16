@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .profile h1 {
+            font-size: 24px;
+            margin: 10px 0 0;
+        }
+        .recommendations {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .recommendation {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .recommendation img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .recommendation .details {
+            flex-grow: 1;
+        }
+        .recommendation .details .name {
+            font-size: 18px;
+            margin: 0;
+        }
+        .recommendation .details .shared-interest {
+            font-size: 14px;
+            color: #666;
+        }
+        .recommendation .connect-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .recommendation .connect-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile">
+    <img src="profile-pic.jpg" alt="Profile Picture">
+    <h1>John Doe</h1>
+</div>
+
+<div class="recommendations">
+    <div class="recommendation">
+        <img src="recommended-pic1.jpg" alt="Recommended Person 1">
+        <div class="details">
+            <p class="name">Alice Smith <button class="connect-button">Connect</button></p>
+            <p class="shared-interest">You both listen to the song 'Yesterday'</p>
+        </div>
+    </div>
+    <div class="recommendation">
+        <img src="recommended-pic2.jpg" alt="Recommended Person 2">
+        <div class="details">
+            <p class="name">Bob Johnson <button class="connect-button">Connect</button></p>
+            <p class="shared-interest">You both listen to the song 'Yesterday'</p>
+        </div>
+    </div>
+    <div class="recommendation">
+        <img src="recommended-pic3.jpg" alt="Recommended Person 3">
+        <div class="details">
+            <p class="name">Charlie Brown <button class="connect-button">Connect</button></p>
+            <p class="shared-interest">You both listen to the song 'Yesterday'</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
